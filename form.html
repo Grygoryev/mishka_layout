@@ -49,10 +49,9 @@
 	</div>
 
 	<form class="order-form" action="" method="post">
-		<div class="order-form__item">
+		<fieldset class="order-form__item">
 			<div class="order-form__header">
-				<h3 class="order-form__item-title">Тип</h3>
-				<hr class="order-form__divider">
+				<legend class="order-form__item-title">Тип</legend>
 			</div>
 			<div class="order-from__option">
 				<input class="stuff-for-interier" type="radio" id="stuff-for-interier" name="">
@@ -62,29 +61,46 @@
 				<input class="children-toy" type="radio" id="children-toy">
 				<label for="children-toy">Детская игрушка</label>
 			</div>
-		</div>
-		<div class="order-form__item">
-			<div class="order-form__header">
-				<h3 class="order-form__item-title">Цвет</h3>
-				<hr class="order-form__divider">
+		</fieldset>
+		<fieldset class="order-form__item">
+			<legend class="order-form__item-title">Цвет</legend>
+				<div class="order-form__option">
+					<input class="order-form__checkbox" type="checkbox" id="checkbox-white" checked>
+					<label for="checxbox-white">Белый</label>
+				</div>
+				<div class="order-form__option">
+					<input class="order-form__checkbox" type="checkbox" name="" id="checkbox-grey" checked>
+					<label for="checkbox-grey">Серый</label>
+				</div>
+				<div class="order-form__option">
+					<input class="order-form__checkbox" type="checkbox" name="" id="checxbox-tiffani">
+				<label for="checxbox-tiffani">"Тифани"</label>
 			</div>
+				<div class="order-form__option">
+					<input class="order-form__checkbox" type="checkbox" name="" id="checxbox-black">
+					<label for="checxbox-black">Чёрный</label>
+				</div>
+				<div class="order-form__option">
+					<input class="order-form__checkbox" type="checkbox" name="" id="checxbox-pink">
+					<label for="checxbox-pink">Розовый</label>
+				</div>
+				<div class="order-form__option">
+					<input class="order-form__checkbox" type="checkbox" name="" id="checxbox-orange">
+					<label for="checxbox-orange">Оранжевый</label>
+				</div>
+
 			<input class="stuff-for-interier" type="radio" id="stuff-for-interier" name="">
 			<label for="stuff-for-interier">Акссесуар для интерьера</label>
 			<input class="children-toy" type="radio" id="children-toy">
 			<label for="children-toy">Детская игрушка</label>
 			<input class="children-toy" type="radio" id="children-toy">
 			<label for="children-toy">Детская игрушка</label>
-		</div>
-		<div class="order-form__item">
-			<div class="order-form__header">
-				<h3 class="order-form__item-title">Тип</h3>
-				<hr class="order-form__divider">
-			</div>
-			<input class="stuff-for-interier" type="radio" id="stuff-for-interier" name="">
-			<label for="stuff-for-interier">Акссесуар для интерьера</label>
-			<input class="children-toy" type="radio" id="children-toy">
-			<label for="children-toy">Детская игрушка</label>
-		</div>	
+		</fieldset>
+		<fieldset class="order-form__item">
+			<legend class="order-form__item-title">Тип</legend>
+			
+
+		</fieldset>	
 	</form>
 
 	<footer class="footer">
