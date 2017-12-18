@@ -5,30 +5,38 @@
 	<title>Catalog</title>
 </head>
 <body>
-	<nav class="menu-mobile">
-		<img class="logo-mobile" src="" alt="">
-		<img class="menu-mobile__items-btn">
-	</nav>
-	
-	<nav class="menu-tablet">
-		<img class="logo-tablet" src="" alt="">	
-		<a class="search-btn" href="#" alt=""></a>
-		<a class="basket">
-			<img class="basket__icon" src="" alt="basket-icon">
-			Корзина: <span class="basket__state"> пока пуста<span>
-		</a>
-	</nav>
-
-	<nav class="menu-destkop">
-		<a class="menu-destkop__item" href="#">Каталог</a>
-		<a class="menu-destkop__item" href="#">Вязание на заказ</a>
-		<a class="menu-destkop__logo"><img src="" alt="destkop-logo" class="menu-destkop__logo-img"></a>
-		<a class="search-btn" href="#" alt="search-btn"></a>
-		<a class="basket">
-			<img class="basket__icon" src="" alt="basket-icon">
-			Корзина: <span class="basket__state"> пока пуста<span>
-		</a>	
-	</nav>
+	<header class="header">
+		<div class="header__top">
+			<div class="links">
+				<a class="links__catalog" href="#">Каталог товаров</a>
+				<a class="links__orderknitting" href="#">Вязание на заказ</a>
+			</div>
+			<div class="header__logo">
+				<img class="logo-mobile" src="" alt="logo-mobile">
+				<img class="logo-tablet" src="" alt="logo-tablet">
+				<img class="logo-destkop" src="" alt="logo-destkop">
+			</div>
+			<span class="menu-mobile__items-btn"></span>	
+			<div class="header__functional">
+				<div class="search-btn"></div>
+				<div class="header__basket">
+					<span class="basket__state"> Корзина: пока пуста </span>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<nav class="menu-tablet">
+				<a class="menu__item menu__catalog" href="#">Каталог товаров</a>
+				<a class="menu__item menu__order-knitting" href="#">Вязание на заказ</a>
+				<a class="menu__item menu__delivery" href="#"> Бесплатная доставка по России</a>
+			</nav>	
+			<nav class="menu-desktop">
+				<a class="menu-extra__item menu-extra__income" href="#">Новые поступления</a>
+				<a class="menu-extra__item menu-extra__sale" href="#">Распродажа</a>
+				<a class="menu-extra__item menu-extra__delivery" href="#"> Бесплатная доставка по России</a>
+			</nav>
+		</div>
+	</header>
 	
 	<div class="catalog">
 		<h1 class="catalog__title">Каталог товаров</h1>
