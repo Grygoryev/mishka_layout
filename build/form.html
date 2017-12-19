@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__top">
+			<div class="links">
+				<a class="links__catalog" href="#">Каталог товаров</a>
+				<a class="links__orderknitting" href="#">Вязание на заказ</a>
+			</div>
+			<div class="header__logo">
+				<img class="logo-mobile" src="" alt="logo-mobile">
+				<img class="logo-tablet" src="" alt="logo-tablet">
+				<img class="logo-destkop" src="" alt="logo-destkop">
+			</div>
+			<span class="menu-mobile__items-btn"></span>	
+			<div class="header__functional">
+				<div class="search-btn"></div>
+				<div class="header__basket">
+					<span class="basket__state"> Корзина: пока пуста </span>
+				</div>
+			</div>
+		</div>
+		<div class="header__bottom">
+			<nav class="menu-tablet">
+				<a class="menu__item menu__catalog" href="#">Каталог товаров</a>
+				<a class="menu__item menu__order-knitting" href="#">Вязание на заказ</a>
+				<a class="menu__item menu__delivery" href="#"> Бесплатная доставка по России</a>
+			</nav>	
+			<nav class="menu-desktop">
+				<a class="menu-extra__item menu-extra__income" href="#">Новые поступления</a>
+				<a class="menu-extra__item menu-extra__sale" href="#">Распродажа</a>
+				<a class="menu-extra__item menu-extra__delivery" href="#"> Бесплатная доставка по России</a>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<div class="intro">
+			<h1 class="intro__title">Вязание на заказ</h1>
+			<p class="intro__text">Мы будем рады воплотить в жизнь ваши пожелания!
+			Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+		</div>
+
+		<form class="order-form" action="" method="post">
+			<fieldset class="order-form__item">
+				<legend class="order-form__item-title">Тип</legend>
+				<div class="order-form__content">	
+					<div class="order-from__option">
+						<input class="stuff-for-interier" type="radio" id="stuff-for-interier" name="product-type" value="stuff-for-interier" checked>
+						<label for="stuff-for-interier">Акссесуар для интерьера</label>
+					</div>
+					<div class="order-from__option">
+						<input class="children-toy" type="radio" id="children-toy" name="product-type" value="children-toy">
+						<label for="children-toy">Детская игрушка</label>
+					</div>
+				</div>
+			</fieldset>
+			<fieldset class="order-form__item">
+				<legend class="order-form__item-title">Цвет</legend>
+				<div class="order-form__content">	
+					<div class="order-form__option">
+						<input class="order-form__checkbox" type="checkbox" id="checkbox-white" checked>
+						<label for="checxbox-white">Белый</label>
+					</div>
+					<div class="order-form__option">
+						<input class="order-form__checkbox" type="checkbox" name="" id="checkbox-grey" checked>
+						<label for="checkbox-grey">Серый</label>
+					</div>
+					<div class="order-form__option">
+						<input class="order-form__checkbox" type="checkbox" name="" id="checxbox-tiffani">
+					<label for="checxbox-tiffani">"Тифани"</label>
+				</div>
+					<div class="order-form__option">
+						<input class="order-form__checkbox" type="checkbox" name="" id="checxbox-black">
+						<label for="checxbox-black">Чёрный</label>
+					</div>
+					<div class="order-form__option">
+						<input class="order-form__checkbox" type="checkbox" name="" id="checxbox-pink">
+						<label for="checxbox-pink">Розовый</label>
+					</div>
+					<div class="order-form__option">
+						<input class="order-form__checkbox" type="checkbox" name="" id="checxbox-orange">
+						<label for="checxbox-orange">Оранжевый</label>
+					</div>
+				</div>
+			</fieldset>	
+			<fieldset class="order-form__fio">
+				<legend class="order-form__item-title">фио</legend>
+				<div class="order-form__content">	
+					<div class="order-form__option">
+						<label for="fio-name">Имя:</label>
+						<input type="text" name="" id="fio-name" placeholder="Введите ваше имя*">	
+					</div>
+					<div class="order-form__option">
+						<label for="fio-surname">Фамилия:</label>
+						<input type="text" name="" id="fio-surname" placeholder="Укажите фамилию*">	
+					</div>
+					<div class="order-form__option">
+						<label for="fio-m-name">Отчество:</label>
+						<input type="text" name="" id="fio-m-name" placeholder="Отчество, если желаете">	
+					</div>	
+				</div>		
+			</fieldset>
+			<fieldset class="order-form__phone">
+				<label for="order-form__phone">
+					<legend class="order-form__item-title">тел</legend>	
+				</label>
+				<div class="order-form__content">	
+					<input type="text" name="" id="order-form__phone" placeholder="+7 XXX XX XX*">
+					<img class="order-form__phone-icon" src="">	
+				</div>
+			</fieldset>
+			<fieldset class="order-form__e-mail">
+				<label for="order-form__e-mail">
+					<legend class="order-form__item-title">e-mail</legend>	
+				</label>
+				<div class="order-form__content">	
+					<input type="text" name="" id="order-form__e-mail" placeholder="+7 XXX XX XX*">
+					<img class="order-form__phone-icon" src="">	
+				</div>	
+			</fieldset>
+			<fieldset class="order-form__extra-info">
+				<label for="order-form__extra-info">
+					<legend class="order-form__item-title">доп</legend>	
+				</label>
+				<div class="order-form__content">	
+					<input type="textarea" name="" id="order-form__extra-info" placeholder="Опишите все ваши пожелания к заказу">
+				</div>		
+			</fieldset>
+			<div class="order-form__submit-field">	
+				<p class="order-form__after-text">*Поля обязательны для заполнения</p>
+				<input class="make-order-btn" type="submit" value="отправить заказ">
+			</div>
+		</form>
+	</main>
+
+	<footer class="footer">
+		<a class="footer__logo" href="#">
+			<img class="footer__logo-img" src="" alt="logo">
+		</a> 
+		<div class="social">
+			<a class="social__item" href="#"><img class="instagram-icon" src="" alt=""></a>
+			<a class="social__item" href="#"><img class="fb-icon" src="" alt=""></a>
+			<a class="social__item" href="#"><img class="twitter-icon" src="" alt=""></a>
+		</div>
+		<a class="copyright" href="#">
+			Разработано <img class="copyright__pic" src="">
+		</a>
+	</footer>
+</body>
+</html>
