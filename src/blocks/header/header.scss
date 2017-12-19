@@ -1,6 +1,6 @@
 .intro__title {
-	color: yellow;
-	@include whichfont(27px, $font-global, 30px);
+	color: white;
+	@include font-char(27px, $fglobal, 30px);
 
 }
 

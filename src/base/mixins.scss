@@ -1,4 +1,4 @@
-@mixin whichfont($fsize, $ftype, $lineheight) {
+@mixin font-char($fsize, $ftype, $lineheight) {
 	font-size: $fsize;
 	font-family: $ftype;
 	line-height: $lineheight;
