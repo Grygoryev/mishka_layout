@@ -1,2 +1,7 @@
-@import "header.scss"
-@import "reset.scss" 
+@import "reset.scss"; 
+@import "../src/base/global.scss";
+
+@import "../src/base/variables.scss";
+@import "../src/base/mixins.scss";
+
+@import "../src/blocks/header/header.scss";

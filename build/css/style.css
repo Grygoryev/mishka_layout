@@ -1,2 +1,7 @@
+body, h1, h2, p {
+  padding: 0;
+  margin: 0; }
+
 .intro__title {
-  color: blue; }
+  color: green;
+  font-size: 15px; }
