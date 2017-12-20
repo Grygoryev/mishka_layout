@@ -70,7 +70,7 @@ gulp.task("html", function() {
 });
 
 gulp.task("optimg", function() {
-  return gulp.src("img/**/*.{png,jpg,svg}")
+  return gulp.src("src/img/**/*.{png,jpg,svg}")
   .pipe(imagemin([
     imagemin.optipng({optimisationLevel: 3}),
     imagemin.jpegtran({progressive: true}),
@@ -89,6 +89,8 @@ gulp.task("serve", function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("src/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html", ["html"]);
   gulp.watch("build/**/*.*").on("change", server.reload);
+
 });

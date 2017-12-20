@@ -1,6 +1,60 @@
-.intro__title {
-	color: white;
-	@include font-char(27px, $fglobal, 30px);
+.header {
+	height: 80px;
+	border-top: 1px solid #ececec;
+	border-bottom: 1px solid #ececec;
+  padding: 0 30px;
 
+	&__top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+    height: 100%;
+	}
+
+  &__logo {
+    transform: translateX(100%);
+  }
+
+	&__bottom {
+		display: none;
+	}
+
+	&__functional {
+    display: none;
+  }
 }
 
+.links {
+	display: none;
+}
+
+.logo-tablet, .logo-desktop {
+	display: none;
+}
+
+
+.menu-mobile__items-btn {
+	width: 20px;
+	height: 2px;
+	background: black;
+	display: block;
+	position: relative;
+
+	&:before {
+		content: "";
+		width: 20px;
+		height: 2px;
+		background: black;
+		bottom: 4px;
+		position: absolute;
+	}
+
+	&:after {
+		content: "";
+		width: 20px;
+		height: 2px;
+		background: black;
+		top: 4px;
+		position: absolute;
+	}
+}

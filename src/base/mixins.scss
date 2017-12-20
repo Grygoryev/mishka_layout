@@ -1,5 +1,12 @@
-@mixin font-char($fsize, $ftype, $lineheight) {
+@mixin font-char($ftype, $fsize, $lineheight) {
 	font-size: $fsize;
 	font-family: $ftype;
 	line-height: $lineheight;
+}
+
+@mixin flex($horisontal, $vertical, $direction) {
+  display: flex;
+  justify-content: $horisontal;
+  align-items: $vertical;
+  flex-direction: $direction;
 }

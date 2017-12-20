@@ -1,4 +1,11 @@
+h1, h2, p {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	width: 320px;
-	background: purple;
+	margin: 0 auto;
+  border: 1px solid rgba(black, 0.1);
+  color: black;
 }

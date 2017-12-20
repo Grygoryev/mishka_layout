@@ -1,0 +1,15 @@
+.weeks-product {
+  padding: 0 30px;
+
+  &__title {
+    @include font-char($fglobal, 25px, 30px);
+    margin: 0 auto;
+  }
+
+  &__label {
+    color: #63d1bb;
+    text-align: right;
+    @include font-char($fglobal, 17px, 20px);
+
+  }
+}
