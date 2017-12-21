@@ -1,0 +1,23 @@
+.about {
+
+  margin-bottom: 70px;
+
+  &__title {
+    margin-bottom: 35px;
+    @include font-char($fglobal, 25px, 30px);
+  }
+
+  &__item {
+    min-height: 120px;
+  }
+
+  &__item-title {
+    @include font-char($fglobal, 17px, 20px);
+  }
+
+  &__icon {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+}

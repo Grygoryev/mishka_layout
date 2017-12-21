@@ -1,0 +1,59 @@
+.opinions {
+  margin-bottom: 41px;
+
+  &__title {
+    @include font-char($fglobal, 25px, 30px);
+    margin-bottom: 33px;
+  }
+
+  &__text {
+    @include font-char($open-sans-regular, 15px, 30px);
+    margin-bottom: 54px;
+  }
+
+  &__arrow-buttons {
+    display: flex;
+    border: 1px solid #ececec;
+    position: relative;
+    width: 260px;
+    height: 52px;
+    margin-bottom: 38px;
+  }
+
+  &__arrow-buttons:after {
+    content: "";
+    width: 1px;
+    height: 52px;
+    background: #ececec;
+    position: absolute;
+    right: 130px;
+  }
+
+  &__write-us-btn {
+    border: 2px solid #444444;
+    border-radius: 0;
+    color: #444444;
+    @include font-char($fglobal, 18px, 20px);
+    min-width: 260px;
+    min-height: 52px;
+  }
+}
+
+.arrow-left-btn {
+  background: url('../img/huge-arrow-left.png') center no-repeat;
+  width: 130px;
+}
+
+.arrow-right-btn {
+  background: url('../img/huge-arrow-right.png') center no-repeat;
+  width: 130px;
+}
+
+.name {
+  @include font-char($fglobal, 17px, 24px);
+}
+
+.instgrm {
+  @include font-char($open-sans-regular, 17px, 30px);
+  margin-bottom: 31px;
+}

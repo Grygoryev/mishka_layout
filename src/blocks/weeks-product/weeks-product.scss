@@ -1,0 +1,72 @@
+.weeks-product {
+  padding: 0 30px;
+
+  &__header {
+    margin-bottom: 37px;
+  }
+
+  &__title {
+    @include font-char($fglobal, 25px);
+    margin: 0 auto;
+    padding-top: 38px;
+    margin-bottom: 14px;
+  }
+
+  &__label {
+    color: #63d1bb;
+    text-align: left;
+    @include font-char($fglobal, 17px);
+  }
+
+  &__text {
+    color: black;
+    @include font-char($open-sans-regular, 15px, 24px);
+    margin-bottom: 41px;
+  }
+
+  &__container {
+    @include flex(space-between, center, column);
+  }
+
+  &__photo {
+    margin-bottom: 31px;
+  }
+
+  &__price {
+    color: #444444;
+    @include font-char($fglobal, 17px, 0);
+    margin-bottom: 31px;
+  }
+
+  &__make-order-btn {
+      color: #444444;
+      border: 2px solid #444444;
+      border-radius: 0;
+      text-transform: uppercase;
+      @include font-char($fglobal, 17px);
+      min-width: 260px;
+      min-height: 52px;
+      margin-bottom: 80px;
+  }
+}
+
+.product-info {
+
+  width: 100%;
+  @include flex(flex-start, center);
+  margin-bottom: 27px;
+
+  &__parameters {
+    width: 60%;
+  }
+
+  &__values {
+    width: 100%;
+  }
+
+  &__parameter, &__value {
+    @include font-char($open-sans-regular, 15px, 24px);
+    border-bottom: 1px solid #ececec;
+    width: 100%;
+  }
+}
