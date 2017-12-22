@@ -1,10 +1,11 @@
-@mixin font-char($ftype, $fsize, $lineheight: 0) {
-	font-size: $fsize;
-	font-family: $ftype;
+@mixin font-char($fsize, $lineheight: 0, $fweight: $regular) {
+  font-size: $fsize;
+	font-family: 'Open Sans', 'Arial', sans-serif;
 	line-height: $lineheight;
+  font-weight: $fweight;
 }
 
-@mixin flex($horisontal, $vertical, $direction:row) {
+@mixin flex($horisontal:null, $vertical:null, $direction:row) {
   display: flex;
   justify-content: $horisontal;
   align-items: $vertical;

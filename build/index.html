@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Mishka</title>
 	<link rel="stylesheet" href="css/style.css">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
@@ -63,28 +63,15 @@
 		<div class="weeks-product__container">
 			<div class="product-info">
         <div class="product-info__parameters">
-          <div class="product-info__parameter">Цвет</div>
-          <div class="product-info__parameter">Диаметр</div>
-          <div class="product-info__parameter">Высота</div>
+          <div class="product-info__parameter">Цвет:</div>
+          <div class="product-info__parameter">Диаметр:</div>
+          <div class="product-info__parameter">Высота:</div>
         </div>
         <div class="product-info__values">
           <div class="product-info__value">"Тиффани"/серый</div>
           <div class="product-info__value">25 см</div>
           <div class="product-info__value">15 см</div>
         </div>
-				<!-- <div class="product-info__item">
-					<div class="product-info__parameter">Цвет</div>
-					<div class="product-info__value">"Тиффани"/серый</div>
-				</div>
-				<div class="product-info__item">
-					<div class="product-info__parameter">Диаметр</div>
-					<div class="product-info__value">25 см</div>
-				</div>
-				<div class="product-info__item">
-					<div class="product-info__parameter">Высота</div>
-					<div class="product-info__value">15 см</div>
-				</div>
-			</div> -->
       </div>
 			<img class="weeks-product__photo" src="img/triple-set-mobile.png" alt="photo-of-product">
 			<p class="weeks-product__price">Цена: 990р</p>
@@ -135,39 +122,45 @@
 		<button class="opinions__write-us-btn"> написать </button>
 	</div>
 
-	<div class="contacts">
-		<div class="contacts__header">
-			<h2 class="contacts__title">Контакты</h2>
-			<img class="contacts__flag-pic" src="" alt="flag-pic">
-		</div>
-		<div class="contacts__info">
-			<div class="contacts__item">
-				<div class="contacts__email">e-mail:</div>
-				<div class="contacts__value">info@mimimishkashop.ru</div>
-			</div>
-		</div>
-		<div class="contacts__info">
-			<div class="contacts__item">
-				<div class="contacts__adress">адрес:</div>
-				<div class="contacts__value">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101</div>
-			</div>
-		</div>
-		<img class="contacts__map" src="" alt="">
-		<button class="contacts__write-us-btn">напишите нам</button>
-	</div>
+  <div class="contacts">
+    <div class="contacts__header">
+      <h2 class="contacts__title">Контакты</h2>
+      <img class="contacts__flag-pic" src="" alt="flag-pic">
+    </div>
+    <div class="contacts__info">
+      <div class="contacts__parameters">
+        <div class="contacts__parameter">e-mail:</div>
+        <div class="contacts__parameter">адрес:</div>
+      </div>
+      <div class="contacts__values">
+        <div class="contacts__email">info@mimimishkashop.ru</div>
+        <div class="contacts__adress">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101 </div>
+      </div>
+    </div>
+    <div class="contacts__map"> </div>
+    <button class="contacts__write-us-btn">напишите нам</button>
+  </div>
 
 	<footer class="footer">
-		<a class="footer__logo" href="#">
-			<img class="footer__logo-img" src="" alt="logo">
-		</a>
-		<div class="social">
-			<a class="social__item" href="#"><img class="instagram-icon" src="" alt=""></a>
-			<a class="social__item" href="#"><img class="fb-icon" src="" alt=""></a>
-			<a class="social__item" href="#"><img class="twitter-icon" src="" alt=""></a>
-		</div>
-		<a class="copyright" href="#">
-			Разработано <img class="copyright__pic" src="">
-		</a>
+    <div class="footer__content">
+  		<a class="footer__logo" href="#">
+  			<div class="footer__logo-img"></div>
+  		</a>
+  		<div class="social">
+  			<a class="social__item" href="#">
+          <div class="instagram-icon"></div>
+        </a>
+  			<a class="social__item" href="#">
+          <div class="fb-icon"></div>
+        </a>
+  			<a class="social__item" href="#">
+          <div class="twitter-icon"></div>
+        </a>
+  		</div>
+  		<a class="footer__copyright copyright" href="#">
+  			Разработано <img class="copyright__pic" src="../img/htmlacademy.png">
+  		</a>
+    </div>
 	</footer>
 </body>
 </html>

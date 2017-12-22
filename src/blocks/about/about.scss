@@ -4,7 +4,7 @@
 
   &__title {
     margin-bottom: 35px;
-    @include font-char($fglobal, 25px, 30px);
+    @include font-char(25px, 30px, 700);
   }
 
   &__item {
@@ -12,7 +12,7 @@
   }
 
   &__item-title {
-    @include font-char($fglobal, 17px, 20px);
+    @include font-char(17px, 20px, 700);
   }
 
   &__icon {

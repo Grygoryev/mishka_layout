@@ -70,15 +70,17 @@ body {
   .intro__title {
     text-align: center;
     font-size: 27px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    line-height: 30px; }
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 30px;
+    font-weight: 700; }
 
 .categories {
   margin-top: 128px; }
   .categories__title {
     font-size: 19px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 24px;
+    font-weight: 700;
     width: 100px;
     color: white;
     text-decoration: none; }
@@ -141,8 +143,9 @@ body {
     margin-bottom: 37px; }
   .weeks-product__title {
     font-size: 25px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    line-height: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 30px;
+    font-weight: 700;
     margin: 0 auto;
     padding-top: 38px;
     margin-bottom: 14px; }
@@ -150,13 +153,15 @@ body {
     color: #63d1bb;
     text-align: left;
     font-size: 17px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    line-height: 0; }
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 20px;
+    font-weight: 700; }
   .weeks-product__text {
     color: black;
     font-size: 15px;
-    font-family: "Open Sans Regular", "Arial", sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 24px;
+    font-weight: 400;
     margin-bottom: 41px; }
   .weeks-product__container {
     display: -webkit-box;
@@ -177,8 +182,9 @@ body {
   .weeks-product__price {
     color: #444444;
     font-size: 17px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    line-height: 0;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 24px;
+    font-weight: 700;
     margin-bottom: 31px; }
   .weeks-product__make-order-btn {
     color: #444444;
@@ -186,8 +192,9 @@ body {
     border-radius: 0;
     text-transform: uppercase;
     font-size: 17px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 0;
+    font-weight: 700;
     min-width: 260px;
     min-height: 52px;
     margin-bottom: 80px; }
@@ -214,8 +221,9 @@ body {
     width: 100%; }
   .product-info__parameter, .product-info__value {
     font-size: 15px;
-    font-family: "Open Sans Regular", "Arial", sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 24px;
+    font-weight: 400;
     border-bottom: 1px solid #ececec;
     width: 100%; }
 
@@ -224,29 +232,39 @@ body {
   .about__title {
     margin-bottom: 35px;
     font-size: 25px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    line-height: 30px; }
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 30px;
+    font-weight: 700; }
   .about__item {
     min-height: 120px; }
   .about__item-title {
     font-size: 17px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
-    line-height: 20px; }
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 20px;
+    font-weight: 700; }
   .about__icon {
     max-width: 100px;
     max-height: 100px; }
 
 .opinions {
-  margin-bottom: 41px; }
+  margin-bottom: 63px;
+  position: relative; }
+  .opinions:after {
+    content: url("../img/zigzag-line-desktop.png");
+    position: absolute;
+    bottom: -44px;
+    right: -31px; }
   .opinions__title {
     font-size: 25px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 30px;
+    font-weight: 700;
     margin-bottom: 33px; }
   .opinions__text {
     font-size: 15px;
-    font-family: "Open Sans Regular", "Arial", sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 30px;
+    font-weight: 400;
     margin-bottom: 54px; }
   .opinions__arrow-buttons {
     display: -webkit-box;
@@ -269,8 +287,10 @@ body {
     border-radius: 0;
     color: #444444;
     font-size: 18px;
-    font-family: "Open Sans Bold", "Arial", sans-serif;
+    font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
     min-width: 260px;
     min-height: 52px; }
 
@@ -284,11 +304,135 @@ body {
 
 .name {
   font-size: 17px;
-  font-family: "Open Sans Bold", "Arial", sans-serif;
-  line-height: 24px; }
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 24px;
+  font-weight: 700; }
 
 .instgrm {
   font-size: 17px;
-  font-family: "Open Sans Regular", "Arial", sans-serif;
+  font-family: 'Open Sans', 'Arial', sans-serif;
   line-height: 30px;
+  font-weight: 400;
   margin-bottom: 31px; }
+
+.contacts__title {
+  font-size: 18px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 30px;
+  font-weight: 700;
+  margin-bottom: 47px; }
+
+.contacts__flag-pic {
+  display: none; }
+
+.contacts__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 15px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 30px;
+  font-weight: 400; }
+
+.contacts__parameters, .contacts__values {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: basline;
+      -ms-flex-align: basline;
+          align-items: basline;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.contacts__parameter {
+  width: 78px;
+  margin-bottom: 48px; }
+
+.contacts__email {
+  border-bottom: 1px solid #62d1ba;
+  margin-bottom: 48px; }
+
+.contacts__adress {
+  margin-bottom: 86px; }
+
+.contacts__map {
+  background: url("../img/map-mobile.png");
+  height: 457px;
+  width: 320px;
+  position: relative;
+  right: 30px;
+  z-index: 1;
+  margin-bottom: 39px; }
+
+.contacts__map:after {
+  content: url(../img/map-pin.png);
+  position: absolute;
+  top: 29%;
+  left: 43%;
+  z-index: 3; }
+
+.contacts__write-us-btn {
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 20px;
+  font-weight: 700;
+  border: 2px solid #444444;
+  border-radius: 0;
+  height: 52px;
+  width: 260px;
+  margin-bottom: 39px; }
+
+.footer {
+  min-height: 160px;
+  padding: 0;
+  background: #f1f1f1; }
+  .footer__content {
+    margin: 0 auto; }
+  .footer__logo-img {
+    display: none; }
+  .footer__copyright {
+    font-size: 19px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 18px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none; }
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-bottom: 1px solid #e5e5e5;
+  width: 260px; }
+  .social__item {
+    width: 50px;
+    height: 50px; }
+
+.instagram-icon {
+  background: url("../img/instgr-icon.png") no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.fb-icon {
+  background: url("../img/fb.png") no-repeat;
+  width: 50px;
+  height: 50px; }
+
+.twitter-icon {
+  background: url("../img/twitter.png") no-repeat;
+  width: 50px;
+  height: 50px; }
