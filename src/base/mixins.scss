@@ -11,3 +11,9 @@
   align-items: $vertical;
   flex-direction: $direction;
 }
+
+@mixin respond-to($type) {
+  @media all and (min-width: $type) {
+    @content
+  }
+}

@@ -1,12 +1,13 @@
 .opinions {
   margin-bottom: 63px;
+  padding: 0 30px;
   position: relative;
 
   &:after {
     content: url('../img/zigzag-line-desktop.png');
     position: absolute;
     bottom: -44px;
-    right: -31px;
+    right: 0;
   }
 
   &__title {

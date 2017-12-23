@@ -15,12 +15,12 @@
 			</div>
 			<div class="header__logo">
 				<img class="logo-mobile" src="img/mishka-logo-mobile.png" alt="logo-mobile">
-				<img class="logo-tablet" src="" alt="logo-tablet">
+				<img class="logo-tablet" src="img/mishka-logo-tablet.png" alt="logo-tablet">
 				<img class="logo-desktop" src="" alt="logo-destkop">
 			</div>
 			<span class="menu-mobile__items-btn"></span>
 			<div class="header__functional">
-				<div class="search-btn"></div>
+				<button class="header__search-btn"></button>
 				<div class="header__basket">
 					<span class="basket__state"> Корзина: пока пуста </span>
 				</div>
@@ -41,9 +41,7 @@
 	</header>
 
 	<div class="intro">
-		<h1 class="intro__title">Милые штуки</h1>
-    <h1 class="intro__title">ручной<h1>
-    <h1 class="intro__title">работы для дома</h1>
+		<h1 class="intro__title">Милые штуки<br class="intro__title-br1"> ручной<br> работы для дома</h1>
 		<div class="categories">
 			<a href="#" class="categories__interier-subjects">
 				<span class="categories__title">Предметы интерьера</span>
@@ -76,7 +74,8 @@
 			<img class="weeks-product__photo" src="img/triple-set-mobile.png" alt="photo-of-product">
 			<p class="weeks-product__price">Цена: 990р</p>
 			<button class="weeks-product__make-order-btn make-order-btn">Заказать</button>
-	</div>
+	 </div>
+  </div>
 
 	<div class="about">
 		<h2 class="about__title">Коротко о нас:</h2>
@@ -122,21 +121,23 @@
 		<button class="opinions__write-us-btn"> написать </button>
 	</div>
 
-  <div class="contacts">
-    <div class="contacts__header">
-      <h2 class="contacts__title">Контакты</h2>
-      <img class="contacts__flag-pic" src="" alt="flag-pic">
-    </div>
-    <div class="contacts__info">
-      <div class="contacts__parameters">
-        <div class="contacts__parameter">e-mail:</div>
-        <div class="contacts__parameter">адрес:</div>
+  <div class="contacts"> <!-- TODO: contacts__container -->
+    <!-- <div class="contacts__container">  доделаю попозже    -->
+      <div class="contacts__header">
+        <h2 class="contacts__title">Контакты</h2>
+        <img class="contacts__flag-pic" src="" alt="flag-pic">
       </div>
-      <div class="contacts__values">
-        <div class="contacts__email">info@mimimishkashop.ru</div>
-        <div class="contacts__adress">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101 </div>
+      <div class="contacts__info">
+        <div class="contacts__parameters">
+          <div class="contacts__parameter">e-mail:</div>
+          <div class="contacts__parameter">адрес:</div>
+        </div>
+        <div class="contacts__values">
+          <div class="contacts__email">info@mimimishkashop.ru</div>
+          <div class="contacts__adress">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101 </div>
+        </div>
       </div>
-    </div>
+    <!-- </div>   -->
     <div class="contacts__map"> </div>
     <button class="contacts__write-us-btn">напишите нам</button>
   </div>
@@ -147,19 +148,14 @@
   			<div class="footer__logo-img"></div>
   		</a>
   		<div class="social">
-  			<a class="social__item" href="#">
-          <div class="instagram-icon"></div>
-        </a>
-  			<a class="social__item" href="#">
-          <div class="fb-icon"></div>
-        </a>
-  			<a class="social__item" href="#">
-          <div class="twitter-icon"></div>
-        </a>
+        <a class="social__item instagram-icon" href="#"></a>
+        <a class="social__item fb-icon" href="#"></a>
+		    <a class="social__item twitter-icon" href="#"></a>
   		</div>
-  		<a class="footer__copyright copyright" href="#">
-  			Разработано <img class="copyright__pic" src="../img/htmlacademy.png">
-  		</a>
+  		<div class="footer__copyright copyright">
+  			<span> Разработано </span>
+        <a class="copyright__pic"></a>
+  		</div>
     </div>
 	</footer>
 </body>

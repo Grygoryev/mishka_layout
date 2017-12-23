@@ -1,5 +1,11 @@
 .contacts {
 
+  padding: 0 30px;
+
+  // &__container {
+  //   padding: 0 30px;
+  // }
+
   &__title {
     @include font-char(18px, 30px, $bold);
     margin-bottom: 47px;

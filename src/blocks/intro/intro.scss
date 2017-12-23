@@ -2,10 +2,19 @@
   background: url('../img/hero-mobile.png') top center no-repeat;
   min-height: 282px;
   padding-top: 80px;
+  @include respond-to($tablet) {
+    background: url('../img/hero-tablet.png') top center no-repeat;
+    &__title-br1 {
+      display: none;
+    }
+  }
 
   &__title {
     text-align: center;
   	@include font-char(27px, 30px, 700);
+    @include respond-to($tablet) {
+      @include font-char(43px, 50px, $bold);
+    }
   }
 }
 

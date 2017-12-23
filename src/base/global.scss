@@ -8,4 +8,10 @@ body {
 	margin: 0 auto;
   border: 1px solid rgba(black, 0.1);
   color: black;
+
+  @include respond-to($tablet) {
+    width: $tablet;
+
+  }
+
 }

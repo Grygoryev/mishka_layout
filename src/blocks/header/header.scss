@@ -1,18 +1,23 @@
 .header {
-	height: 80px;
-	border-top: 1px solid #ececec;
-	border-bottom: 1px solid #ececec;
-  padding: 0 30px;
 
 	&__top {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-    height: 100%;
+    @include flex(space-between, center);
+    height: 80px;
+    padding: 0 30px;
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    @include respond-to($tablet) {
+      height: 89px;
+      padding: 0 50px;
+      @include flex(space-between);
+    }
 	}
 
   &__logo {
     transform: translateX(100%);
+    @include respond-to($tablet) {
+      transform: none;
+    }
   }
 
 	&__bottom {
@@ -21,7 +26,29 @@
 
 	&__functional {
     display: none;
+    height: 100%;
+    max-width: 398px;
+
+    @include respond-to($tablet) {
+      @include flex();
+    }
   }
+
+  &__search-btn {
+    background: url('../img/search.png') center center no-repeat;
+    border: none;
+    border-radius: 0;
+    border-left: 1px solid #ececec;
+    width: 82px;
+  }
+
+  &__basket {
+    @include font-char(17px, 24px, $bold);
+    @include flex(null, center);
+    border-left: 1px solid #ececec;
+    padding-left: 82px;
+  }
+
 }
 
 .links {
@@ -32,8 +59,20 @@
 	display: none;
 }
 
+@include respond-to($tablet) {
+  .logo-tablet {
+    display: block;
+  }
+  .logo-mobile {
+    display: none;
+  }
+}
 
 .menu-mobile__items-btn {
+  @include respond-to($tablet) {
+    display: none;
+  }
+
 	width: 20px;
 	height: 2px;
 	background: black;
