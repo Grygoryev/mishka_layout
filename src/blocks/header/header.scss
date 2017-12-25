@@ -1,4 +1,5 @@
 .header {
+  position: relative;
 
 	&__top {
     @include flex(space-between, center);
@@ -20,9 +21,23 @@
     }
   }
 
-	&__bottom {
+  &__bottom {
+    padding: 0 50px;
+    position: absolute;
+    top: 100px;
+  }
+
+	&__menu-desktop {
 		display: none;
 	}
+
+  &__menu-tablet {
+    display: none;
+    @include respond-to($tablet) {
+      @include flex(space-between);
+      @include font-char(15px, 24px, $bold);
+    }
+  }
 
 	&__functional {
     display: none;
@@ -47,8 +62,33 @@
     @include flex(null, center);
     border-left: 1px solid #ececec;
     padding-left: 82px;
+    position: relative;
+
+    &:before {
+      content: url('../img/cart.png');
+      display: block;
+      position: absolute;
+      left: 30px;
+      top: 35px;
+    }
+  }
+}
+
+.menu-extra {
+
+  &__item {
+    text-decoration: none;
+    color: black;
   }
 
+  &__order-knitting {
+    margin-left: 35px;
+  }
+
+  &__delivery {
+    font-weight: 400;
+    margin-left: 133px;
+  }
 }
 
 .links {

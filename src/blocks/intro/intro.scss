@@ -4,8 +4,21 @@
   padding-top: 80px;
   @include respond-to($tablet) {
     background: url('../img/hero-tablet.png') top center no-repeat;
+    padding-top: 170px;
+    position: relative;
     &__title-br1 {
       display: none;
+    }
+  }
+
+  @include respond-to($tablet) {
+    &:after {
+      content: url('../img/zigzag-fill-desktop.png');
+      width: 768px;
+      display: block;
+      position: absolute;
+      bottom: -10px;
+      right: 1px; //почему приходится вырванивать?
     }
   }
 
@@ -20,9 +33,17 @@
 
 .categories {
     margin-top: 128px;
+    @include respond-to($tablet) {
+      margin-top: 356px;
+      display: flex;
+      padding: 0 50px;
+    }
 
   &__title {
     @include font-char(19px, 24px, 700)
+    @include respond-to($tablet) {
+      @include font-char(20px, 30px, 700)
+    }
     width: 100px;
     color: white;
     text-decoration: none;
@@ -35,6 +56,10 @@
     text-decoration: none;
     @include flex(space-between, center);
     position: relative;
+    @include respond-to($tablet) {
+      width: 334px;
+      min-height: 120px;
+    }
   }
 
   &__interier-subjects:after {
@@ -53,6 +78,10 @@
     text-decoration: none;
     @include flex(space-between, center);
     position: relative;
+    @include respond-to($tablet) {
+      width: 334px;
+      min-height: 120px;
+    }
   }
 
   &__child-toy:after {
