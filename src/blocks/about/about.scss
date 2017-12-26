@@ -1,14 +1,46 @@
 .about {
   padding: 0px 30px;
   margin-bottom: 70px;
+  @include respond-to($tablet) {
+    padding: 0 50px;
+  }
+  @include respond-to($desktop) {
+    border: 1px solid black;
+    padding: 0 275px;
+  }
 
   &__title {
     margin-bottom: 35px;
     @include font-char(25px, 30px, 700);
+    @include respond-to($tablet) {
+      @include font-char(43px, 50px, 700);
+      margin-bottom: 58px;
+    }
+    @include respond-to($desktop) {
+      @include font-char(53px, 57px, $bold);
+    }
+  }
+
+  &__container {
+    @include respond-to($tablet) {
+      @include font-char(20px, 22px, 700);
+      @include flex(space-between, null, column);
+      flex-wrap: wrap;
+      height: 400px;
+    }
+    @include respond-to($desktop) {
+      width: 700px;
+    }
   }
 
   &__item {
     min-height: 120px;
+    @include respond-to($tablet) {
+      width: 45%;
+    }
+    @include respond-to($desktop) {
+      width: 290px;
+    }
   }
 
   &__item-title {

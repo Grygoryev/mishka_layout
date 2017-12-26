@@ -9,16 +9,22 @@
     &__title-br1 {
       display: none;
     }
+
+  @include respond-to($desktop) {
+    background: url('../img/hero-desktop.png') top center no-repeat;
+    padding-top: 170px;
+    position: relative;
+    }
   }
 
   @include respond-to($tablet) {
     &:after {
-      content: url('../img/zigzag-fill-desktop.png');
-      width: 768px;
-      display: block;
+      content: "";
+      background: url('../img/zigzag-fill-desktop.png');
+      height: 20px;
+      width: 100%;
       position: absolute;
       bottom: -10px;
-      right: 1px; //почему приходится вырванивать?
     }
   }
 
@@ -27,6 +33,9 @@
   	@include font-char(27px, 30px, 700);
     @include respond-to($tablet) {
       @include font-char(43px, 50px, $bold);
+    }
+    @include respond-to($desktop) {
+      @include font-char(53px, 57  px, $bold);
     }
   }
 }
@@ -37,6 +46,9 @@
       margin-top: 356px;
       display: flex;
       padding: 0 50px;
+    }
+    @include respond-to($desktop) {
+      padding: 0 100px;
     }
 
   &__title {
@@ -60,6 +72,10 @@
       width: 334px;
       min-height: 120px;
     }
+    @include respond-to($desktop) {
+      width: 525px;
+      min-height: 120px;;
+    }
   }
 
   &__interier-subjects:after {
@@ -81,6 +97,10 @@
     @include respond-to($tablet) {
       width: 334px;
       min-height: 120px;
+    }
+    @include respond-to($desktop) {
+      width: 525px;
+      min-height: 120px;;
     }
   }
 

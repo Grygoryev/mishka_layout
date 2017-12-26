@@ -5,21 +5,22 @@
 	<title>Mishka</title>
 	<link rel="stylesheet" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 </head>
 <body>
 	<header class="header">
 		<div class="header__top">
 			<div class="links">
-				<a class="links__catalog" href="#">Каталог товаров</a>
-				<a class="links__orderknitting" href="#">Вязание на заказ</a>
+				<a class="links__item links__catalog" href="#">Каталог товаров</a>
+				<a class="links__item links__orderknitting" href="#">Вязание на заказ</a>
 			</div>
 			<div class="header__logo">
 				<img class="logo-mobile" src="img/mishka-logo-mobile.png" alt="logo-mobile">
 				<img class="logo-tablet" src="img/mishka-logo-tablet.png" alt="logo-tablet">
-				<img class="logo-desktop" src="" alt="logo-destkop">
+				<img class="logo-desktop" src="img/mishka-logo-desktop.png" alt="logo-destkop">
 			</div>
-			<span class="menu-mobile__items-btn"></span>
+			<a class="menu-mobile__items-btn" href=""></a>
 			<div class="header__functional">
 				<button class="header__search-btn"></button>
 				<div class="header__basket">
@@ -72,38 +73,42 @@
           <div class="product-info__value">15 см</div>
         </div>
       </div>
-			<img class="weeks-product__photo" src="img/triple-set-mobile.png" alt="photo-of-product">
-			<p class="weeks-product__price">Цена: 990р</p>
-			<button class="weeks-product__make-order-btn make-order-btn">Заказать</button>
+			<img class="weeks-product__photo-mobile" src="img/triple-set-mobile.png" alt="photo-of-product">
+      <img class="weeks-product__photo-tablet" src="img/triple-set-tablet.png" alt="photo-of-product">
+			<img class="weeks-product__photo-desktop" src="img/triple-set-desktop.png" alt="photo-of-product">
+      <p class="weeks-product__price">Цена: 990 руб.</p>
+			<a class="weeks-product__make-order-btn make-order-btn" href="#">Заказать</a>
 	 </div>
   </div>
 
 	<div class="about">
 		<h2 class="about__title">Коротко о нас:</h2>
-		<div class="about__item">
-			<img class="about__icon" src="img/icon-1.png" alt="about-us-icon">
-			<h3 class="about__item-title">Экологически чистые материалы</h3>
-		</div>
-		<div class="about__item">
-			<img class="about__icon" src="img/icon-4.png" alt="about-us-icon">
-			<h3 class="about__item-title">Скандинавский стиль по российской цене</h3>
-		</div>
-		<div class="about__item">
-			<img class="about__icon" src="img/icon-3.png" alt="about-us-icon">
-			<h3 class="about__item-title">Увеличивает лайки на фотографиях</h3>
-		</div>
-		<div class="about__item">
-			<img class="about__icon" src="img/icon-2.png" alt="about-us-icon">
-			<h3 class="about__item-title">Связано вручную с любовью и умилением</h3>
-		</div>
-		<div class="about__item">
-			<img class="about__icon" src="img/icon-5.png" alt="about-us-icon">
-			<h3 class="about__item-title">Поддержка отечественного производителя</h3>
-		</div>
-		<div class="about__item">
-			<img class="about__icon" src="img/icon-6.png" alt="about-us-icon">
-			<h3 class="about__item-title">Поставляется в подарочной упаковке</h3>
-		</div>
+		<div class="about__container">
+      <div class="about__item">
+  			<img class="about__icon" src="img/icon-1.png" alt="about-us-icon">
+  			<h3 class="about__item-title">Экологически чистые материалы</h3>
+  		</div>
+  		<div class="about__item">
+  			<img class="about__icon" src="img/icon-3.png" alt="about-us-icon">
+  			<h3 class="about__item-title">Скандинавский стиль по российской цене</h3>
+  		</div>
+  		<div class="about__item">
+  			<img class="about__icon" src="img/icon-5.png" alt="about-us-icon">
+  			<h3 class="about__item-title">Увеличивает лайки на фотографиях</h3>
+  		</div>
+  		<div class="about__item">
+  			<img class="about__icon" src="img/icon-2.png" alt="about-us-icon">
+  			<h3 class="about__item-title">Связано вручную с любовью и умилением</h3>
+  		</div>
+  		<div class="about__item">
+  			<img class="about__icon" src="img/icon-4.png" alt="about-us-icon">
+  			<h3 class="about__item-title">Поддержка отечественного производителя</h3>
+  		</div>
+  		<div class="about__item">
+  			<img class="about__icon" src="img/icon-6.png" alt="about-us-icon">
+  			<h3 class="about__item-title">Поставляется в подарочной упаковке</h3>
+  		</div>
+    </div>
 	</div>
 
 	<div class="opinions">
@@ -112,46 +117,44 @@
       Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
 		</p>
 		<div class="opinions__arrow-buttons">
-			<div class="arrow-left-btn"></div>
-			<div class="arrow-right-btn"></div>
+			<button class="arrow-left-btn"></button>
+			<button class="arrow-right-btn"></button>
 		</div>
     <div class="opinions__author-sign">
       <p class="name">Анастасия Красильникова</p>
       <p class="instgrm">@misssssiskras</p>
     </div>
-		<button class="opinions__write-us-btn"> написать </button>
+		<a class="opinions__write-us-btn" href="#"> написать </a>
 	</div>
 
-  <div class="contacts"> <!-- TODO: contacts__container -->
+  <div class="contacts">
     <div class="contacts__container">
       <div class="contacts__header">
         <h2 class="contacts__title">Контакты</h2>
-        <img class="contacts__flag-pic" src="" alt="flag-pic">
+        <img class="contacts__flag-pic" src="img/flag.png" alt="flag-pic">
       </div>
       <div class="contacts__info">
-        <div class="contacts__parameters">
+        <div class="contacts__item">
           <div class="contacts__parameter">e-mail:</div>
-          <div class="contacts__parameter">адрес:</div>
-        </div>
-        <div class="contacts__values">
           <div class="contacts__email">info@mimimishkashop.ru</div>
+        </div>
+        <div class="contacts__item contacts-adress">
+          <div class="contacts__parameter">адрес:</div>
           <div class="contacts__adress">г.Санкт-Петербург, ул.Большая Конюшенная, д.19/8, офис 101 </div>
         </div>
       </div>
     </div>
     <div class="contacts__map"> </div>
-    <button class="contacts__write-us-btn">напишите нам</button>
+    <a class="contacts__write-us-btn" href="#">напишите нам</a>
   </div>
 
 	<footer class="footer">
     <div class="footer__content">
-  		<a class="footer__logo" href="#">
-  			<div class="footer__logo-img"></div>
-  		</a>
+  		<a class="footer__logo" href="#"></a>
   		<div class="social">
-        <a class="social__item instagram-icon" href="#"></a>
-        <a class="social__item fb-icon" href="#"></a>
-		    <a class="social__item twitter-icon" href="#"></a>
+          <a class="social__item instagram-icon" href="#"></a>
+          <a class="social__item fb-icon" href="#"></a>
+  		    <a class="social__item twitter-icon" href="#"></a>
   		</div>
   		<div class="footer__copyright copyright">
   			<span> Разработано </span>

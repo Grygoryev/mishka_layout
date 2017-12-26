@@ -1,5 +1,8 @@
 .header {
   position: relative;
+  @include respond-to($desktop) {
+    padding: 0 50px;
+  }
 
 	&__top {
     @include flex(space-between, center);
@@ -11,13 +14,22 @@
       height: 89px;
       padding: 0 50px;
       @include flex(space-between);
+      border-top: 0;
     }
 	}
 
   &__logo {
-    transform: translateX(100%);
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
     @include respond-to($tablet) {
+      position: static;
+      left: auto;
       transform: none;
+    }
+    @include respond-to($desktop) {
+      position: static;
+      margin-right: 57px;
     }
   }
 
@@ -25,10 +37,16 @@
     padding: 0 50px;
     position: absolute;
     top: 100px;
+    z-index: 15;
   }
 
 	&__menu-desktop {
 		display: none;
+    @include respond-to($desktop) {
+      @include flex(space-between);
+      @include font-char(15px, 24px, $bold);
+      width: 1050px;
+    }
 	}
 
   &__menu-tablet {
@@ -37,13 +55,15 @@
       @include flex(space-between);
       @include font-char(15px, 24px, $bold);
     }
+    @include respond-to($desktop) {
+      display: none;
+    }
   }
 
 	&__functional {
     display: none;
     height: 100%;
     max-width: 398px;
-
     @include respond-to($tablet) {
       @include flex();
     }
@@ -88,11 +108,34 @@
   &__delivery {
     font-weight: 400;
     margin-left: 133px;
+    @include respond-to($desktop) {
+      margin-left: 434px;
+    }
   }
 }
 
 .links {
 	display: none;
+  @include respond-to($desktop) {
+    @include flex(space-between);
+    @include font-char(17px, 24px, $bold);
+  }
+
+  &__item {
+    @include flex(space-between, center);
+    color: black;
+    text-decoration: none;
+    width: 184px;
+    height: 89px;
+
+    &:first-child {
+      border-right: 1px solid #ececec;
+    }
+
+    &:nth-child(2) {
+      padding-left: 36px;
+    }
+  }
 }
 
 .logo-tablet, .logo-desktop {
@@ -105,6 +148,15 @@
   }
   .logo-mobile {
     display: none;
+  }
+}
+
+@include respond-to($desktop) {
+  .logo-tablet {
+    display: none;
+  }
+  .logo-desktop {
+    display: block;
   }
 }
 

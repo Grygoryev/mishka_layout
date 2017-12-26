@@ -1,26 +1,45 @@
 .footer {
-  min-height: 160px;
+  height: 160px;
   padding: 0;
   background: #f1f1f1;
   display: flex;
   align-items: center;
+  @include respond-to($tablet) {
+    height: 143px;
+  }
 
   &__content {
     padding: 0px 30px;
+    margin: 0 auto;
+    @include respond-to($tablet) {
+      padding: 0 50px;
+      @include flex(space-between, center);
+      width: 100%;
+    }
   }
 
-  &__logo-img {
+  &__logo {
     display: none;
+    @include respond-to($tablet) {
+      display: block;
+      background: url('../img/logo-footer-tablet.png') no-repeat;
+      height: 35px;
+      width: 106px;
+      margin-right: 63px;
+    }
   }
 
   &__copyright {
     @include font-char(19px, 18px, $bold);
-    @include flex(space-between, center);
+    @include flex(flex-start, center);
     color: black;
     text-decoration: none;
     width: 180px;
     height: 80px;
     margin: 0 auto;
+    @include respond-to($tablet) {
+      margin: 0;
+    }
   }
 }
 
@@ -29,30 +48,41 @@
   border-bottom: 1px solid #e5e5e5;
   width: 260px;
   height: 81px;
+  @include respond-to($tablet) {
+    border: none;
+    width: 143px;
+    display: flex;
+    justify-content: space-between;
+  }
 
   &__item {
-    width: 50px;
+    width: 25px;
     height: 30px;
   }
 }
 
 .instagram-icon {
   background: url('../img/instgr-icon.png') bottom no-repeat;
-  width: 50px;
+  width: 25px;
 }
 
 .fb-icon {
   background: url('../img/fb.png') center center no-repeat;
-  width: 50px
+  width: 25px;
+  margin: 0 33px;
+  @include respond-to($tablet) {
+    margin: 0;
+  }
 }
 
 .twitter-icon {
   background: url('../img/twitter.png') bottom no-repeat;
-  width: 50px;
+  width: 25px;
 }
 
 .copyright__pic {
   background: url("../img/htmlacademy.png") center center no-repeat;
   width: 50px;
   height: 50px;
+  margin-left: 28px;
 }

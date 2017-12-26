@@ -11,7 +11,8 @@ body {
 
   @include respond-to($tablet) {
     width: $tablet;
-
   }
-
+  @include respond-to($desktop) {
+    width: $desktop;
+  }
 }

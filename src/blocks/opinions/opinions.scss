@@ -2,22 +2,55 @@
   margin-bottom: 63px;
   padding: 0 30px;
   position: relative;
+  @include respond-to($tablet) {
+    @include flex(space-between, center);
+    flex-wrap: wrap;
+    min-height: 458px;
+    padding: 0 50px;
+    padding-top: 45px;
+    align-content: center;
+    background: url('../img/review-tablet.png') left top no-repeat;
+  }
+
+  @include respond-to($desktop) {
+    padding: 0 100px 0 275px;
+    border: 1px solid black;
+    background: url('../img/review-tablet.png') 100px top no-repeat;
+  }
 
   &:after {
     content: url('../img/zigzag-line-desktop.png');
     position: absolute;
     bottom: -44px;
     right: 0;
+    @include respond-to($tablet) {
+      content: url('../img/zigzag-line-desktop2.png');
+    }
+    @include respond-to($desktop) {
+        content: url('../img/zigzag-line-desktop1.png');
+        right: 93px;
+      }
   }
 
   &__title {
     @include font-char(25px, 30px, 700);
     margin-bottom: 33px;
+    @include respond-to($tablet) {
+      @include font-char(43px, 50px, 700);
+      display: flex;
+      align-self: flex-end;
+      margin-bottom: 50px;
+      order: 2;
+    }
   }
 
   &__text {
     @include font-char(15px, 30px);
     margin-bottom: 54px;
+    @include respond-to($tablet) {
+      @include font-char(17px, 30px);
+      order: 3;
+    }
   }
 
   &__arrow-buttons {
@@ -27,6 +60,9 @@
     width: 260px;
     height: 52px;
     margin-bottom: 38px;
+    @include respond-to($tablet) {
+      order: 5;
+    }
   }
 
   &__arrow-buttons:after {
@@ -44,19 +80,38 @@
     color: #444444;
     @include font-char(18px, 20px, $bold);
     text-transform: uppercase;
-    min-width: 260px;
-    min-height: 52px;
+    width: 260px;
+    padding: 17px 0;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: block;
+    @include respond-to($tablet) {
+      order: 2;
+      width: 175px;
+      align-self: flex-start;
+    }
+  }
+
+  &__author-sign {
+    @include respond-to($tablet) {
+      order: 4;
+    }
   }
 }
 
 .arrow-left-btn {
   background: url('../img/huge-arrow-left.png') center no-repeat;
   width: 130px;
+  border: 0;
+  border-radius: 0;
 }
 
 .arrow-right-btn {
   background: url('../img/huge-arrow-right.png') center no-repeat;
   width: 130px;
+  border: 0;
+  border-radius: 0;
 }
 
 .name {

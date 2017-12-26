@@ -1,14 +1,53 @@
 .weeks-product {
   padding: 0 30px;
+  @include respond-to($tablet) {
+    padding: 0 50px;
+    position: relative;
+
+    &:after {
+      content: url('../img/zigzag-line-desktop2.png');
+      position: absolute;
+      bottom: 0;
+      right: 0px;
+    }
+    @include respond-to($desktop) {
+      &:after {
+        content: url('../img/zigzag-line-desktop1.png');
+        right: 93px;
+      }
+    }
+  }
+  @include respond-to($desktop) {
+    padding: 0 100px;
+  }
+
 
   &__header {
     margin-bottom: 37px;
+    padding-top: 38px;
+    @include respond-to($tablet) {
+      @include flex(space-between, center);
+    }
+    @include respond-to($desktop) {
+      padding-top: 123px;
+    }
   }
 
   &__title {
     @include font-char(25px, 30px, $bold);
+    @include respond-to($tablet) {
+      @include font-char(43px, 50px, $bold);
+      margin-left: 0;
+      margin-bottom: 0;
+    }
+    @include respond-to($desktop) {
+      order: 2;
+      @include font-char(53px, 57px, $bold);
+      margin-left: 34px;
+      margin-bottom: 12px;
+      z-index: 3;
+    }
     margin: 0 auto;
-    padding-top: 38px;
     margin-bottom: 14px;
   }
 
@@ -16,26 +55,79 @@
     color: #63d1bb;
     text-align: left;
     @include font-char(17px, 20px, $bold);
+    @include respond-to($tablet) {
+      @include font-char(17px, 17px, $bold);
+      width: 111px;
+      text-align: center;
+    }
+    @include respond-to($desktop) {
+      order: 1;
+      font-weight: 500;
+      margin-left: 26px;
+      text-transform: uppercase;
+    }
   }
 
   &__text {
     color: black;
-    @include font-char(15px, 24px);
+    @include font-char(17px, 30px);
     margin-bottom: 41px;
+    @include respond-to($tablet) {
+      width: 292px;
+      margin-bottom: 59px;
+    }
+    @include respond-to($desktop) {
+      margin-left: 175px;
+      margin-bottom: 47px;
+    }
   }
 
   &__container {
     @include flex(space-between, center, column);
+    @include respond-to($tablet) {
+      width: 292px;
+      margin-bottom: 64px;
+    }
+    @include respond-to($desktop) {
+      margin-left: 175px;
+    }
   }
 
-  &__photo {
+  &__photo-mobile {
     margin-bottom: 31px;
+    @include respond-to($tablet) {
+      display: none;
+    }
+  }
+
+  &__photo-tablet {
+    display: none;
+    @include respond-to($tablet) {
+      display: block;
+      position: absolute;
+      right: 50px;
+      top: 132px;
+    }
+    @include respond-to($desktop) {
+      display: none;
+    }
+  }
+
+  &__photo-desktop {
+    display: none;
+    @include respond-to($desktop) {
+      display: block;
+      position: absolute;
+      right: 98px;
+      top: 72px;
+      z-index: 1;
+    }
   }
 
   &__price {
     color: #444444;
-    @include font-char(17px, 24px, $bold);
-    margin-bottom: 31px;
+    @include font-char(20px, 24px, $bold);
+    margin-bottom: 33px;
   }
 
   &__make-order-btn {
@@ -43,10 +135,17 @@
       border: 2px solid #444444;
       border-radius: 0;
       text-transform: uppercase;
-      @include font-char(17px, 0, $bold);
+      @include font-char(17px, 20px, $bold);
       min-width: 260px;
-      min-height: 52px;
       margin-bottom: 80px;
+      padding: 15px 0;
+      text-align: center;
+      text-decoration: none;
+      color: black;
+      display: block;
+      @include respond-to($desktop) {
+        width: 290px;
+      }
   }
 }
 
@@ -54,7 +153,7 @@
 
   width: 100%;
   @include flex(flex-start, center);
-  margin-bottom: 27px;
+  margin-bottom: 108px;
 
   &__parameters {
     width: 60%;
@@ -65,7 +164,7 @@
   }
 
   &__parameter, &__value {
-    @include font-char(15px, 24px);
+    @include font-char(15px, 40px);
     border-bottom: 1px solid #ececec;
     width: 100%;
   }
