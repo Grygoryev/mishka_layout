@@ -605,7 +605,6 @@ body {
       padding: 0 50px; } }
   @media all and (min-width: 1250px) {
     .about {
-      border: 1px solid black;
       padding: 0 275px; } }
   .about__title {
     margin-bottom: 35px;
@@ -695,7 +694,6 @@ body {
   @media all and (min-width: 1250px) {
     .opinions {
       padding: 0 100px 0 275px;
-      border: 1px solid black;
       background: url("../img/review-tablet.png") 100px top no-repeat; } }
   .opinions:after {
     content: url("../img/zigzag-line-desktop.png");
@@ -822,7 +820,6 @@ body {
 
 @media all and (min-width: 1250px) {
   .contacts {
-    border: 1px solid black;
     padding-top: 111px;
     position: relative; } }
 

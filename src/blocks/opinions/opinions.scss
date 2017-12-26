@@ -14,7 +14,6 @@
 
   @include respond-to($desktop) {
     padding: 0 100px 0 275px;
-    border: 1px solid black;
     background: url('../img/review-tablet.png') 100px top no-repeat;
   }
 

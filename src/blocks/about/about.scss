@@ -5,7 +5,6 @@
     padding: 0 50px;
   }
   @include respond-to($desktop) {
-    border: 1px solid black;
     padding: 0 275px;
   }
 

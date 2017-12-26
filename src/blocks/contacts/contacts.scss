@@ -1,6 +1,5 @@
 .contacts {
   @include respond-to($desktop) {
-    border: 1px solid black;
     padding-top: 111px;
     position: relative;
   }
