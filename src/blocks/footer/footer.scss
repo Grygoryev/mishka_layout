@@ -16,6 +16,9 @@
       @include flex(space-between, center);
       width: 100%;
     }
+    @include respond-to($tablet) {
+      padding: 0 100px;
+    }
   }
 
   &__logo {
