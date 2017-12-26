@@ -1,7 +1,8 @@
 .contacts {
   @include respond-to($desktop) {
     border: 1px solid black;
-    padding-top: 187px;
+    padding-top: 111px;
+    position: relative;
   }
 
   &__container {
@@ -11,7 +12,6 @@
     }
     @include respond-to($desktop) {
       padding: 0 100px 0 100px;
-      background: url('../img/map-pin-desktop.png') 627px 16px no-repeat;
     }
   }
 
@@ -72,16 +72,25 @@
   &__parameter {
     width: 78px;
     margin-bottom: 48px;
+    @include respond-to($desktop) {
+      margin-bottom: 35px;
+    }
   }
 
   &__email {
     border-bottom: 1px solid #62d1ba;
     margin-bottom: 48px;
+    @include respond-to($desktop) {
+      margin-bottom: 35px;
+    }
   }
 
   &__adress {
     margin-bottom: 86px;
     margin-left: 33px;
+    @include respond-to($desktop) {
+      margin-bottom: 64px;
+    }
   }
 
   &__map {
@@ -97,7 +106,12 @@
       margin-bottom: 55px;
     }
     @include respond-to($desktop) {
-      display: none;
+      background: url('../img/map-pin-desktop.png') no-repeat;
+      width: 547px;
+      height: 446px;
+      position: absolute;
+      top: 45px;
+      right: 78px;
     }
   }
 
@@ -132,6 +146,9 @@
     }
     @include respond-to($desktop) {
       margin: 0;
+      margin-left: 274px;
+      padding: 15px 0;
+      margin-bottom: 105px;
     }
   }
 }
