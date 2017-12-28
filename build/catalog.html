@@ -59,8 +59,8 @@
     <div class="catalog__content">
       <div class="catalog__item">
         <picture class="catalog__photo">
-          <source srcset="img/photo-1-tablet.png" media="(min-width: 768px)">
-  			  <img srcset="img/photo-1-mobile.png" alt="default-product-photo">
+          <source class="catalog__picture" srcset="img/photo-1-tablet.png" media="(min-width: 768px)">
+  			  <img class="catalog__picture" srcset="img/photo-1-mobile.png" alt="default-product-photo">
   			</picture>
         <div class="catalog__info">
           <div class="catalog__text-info">
@@ -75,8 +75,8 @@
   		</div>
   		<div class="catalog__item">
         <picture class="catalog__photo">
-          <source srcset="img/photo-2-tablet.png" media="(min-width: 768px)">
-  			  <img srcset="img/photo-2-mobile.png" alt="default-product-photo">
+          <source class="catalog__picture" srcset="img/photo-2-tablet.png" media="(min-width: 768px)">
+  			  <img class="catalog__picture" srcset="img/photo-2-mobile.png" alt="default-product-photo">
   			</picture>
   			<div class="catalog__info">
           <div class="catalog__text-info">
@@ -91,8 +91,8 @@
   		</div>
   		<div class="catalog__item">
         <picture class="catalog__photo">
-          <source srcset="img/photo-3-tablet.png" media="(min-width: 768px)">
-          <img srcset="img/photo-3-mobile.png" alt="default-product-photo">
+          <source class="catalog__picture" srcset="img/photo-3-tablet.png" media="(min-width: 768px)">
+          <img class="catalog__picture" srcset="img/photo-3-mobile.png" alt="default-product-photo">
         </picture>
   			<div class="catalog__info">
           <div class="catalog__text-info">
@@ -113,7 +113,10 @@
 			<h2 class="promo__title">Процесс производства</h2>
 		</div>
 		<!-- <iframe class="promo__video" src="" frameborder="0"></iframe> -->
-    <img class="promo__video" src="img/play-mobile.png" alt="video">
+    <picture>
+      <source class="promo__video" srcset="img/video-tablet.png" media="(min-width: 768px)">
+      <img class="promo__video" src="img/play-mobile.png" alt="video">
+    </picture>
   	<div class="promo__content">
       <p class="promo__text">По просьбе наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
   		<a class="promo__make-order-btn" href="#">Сделать заказ</a>

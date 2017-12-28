@@ -2,22 +2,38 @@
 
   &__header {
     @include flex(center, center);
-    height: 177px;
+    min-height: 177px;
     background-color: #f1f1f1;
     margin-bottom: 30px;
+    @include respond-to($tablet) {
+      min-height: 226px;
+      margin-bottom: 80px;
+    }
   }
 
   &__title {
     @include font-char(27px, 30px, $bold);
+    @include respond-to($tablet) {
+      @include font-char(43px, 50px, $bold);
+    }
   }
 
   &__content {
     padding: 0 30px;
+    @include respond-to($tablet) {
+      padding: 0 50px;
+    }
   }
 
   &__item {
     @include flex(center, center, column);
     margin-bottom: 30px;
+    @include respond-to($tablet) {
+      @include flex(space-between);
+      border: 1px solid #ededed;
+      min-height: 333px;
+      margin-bottom: 55px;
+    }
 
     &:hover {
       box-shadow: 0 0 1px rgba(black, 0.3);
@@ -25,30 +41,53 @@
   }
 
   &__photo {
-    width: 260px;
-    height: 195px;
+    @include respond-to($tablet) {
+      height: auto;
+    }
+  }
+
+  &__picture {
+    display: block;
   }
 
   &__item-title {
     @include font-char(17px, 24px, $bold);
     margin-bottom: 7px;
+    @include respond-to($tablet) {
+      @include font-char(20px, 24px, $bold);
+    }
 
   }
 
   &__info {
     width: 258px;
     border: 1px solid #ededed;
+    @include respond-to($tablet) {
+      width: 334px;
+      min-height: 305px;
+      border: none;
+      padding-top: 29px;
+      @include flex(space-between, flex-start, column);
+    }
   }
 
   &__text-info {
     margin: 0 auto;
     padding: 29px 0 19px 0;
     width: 204px;
+    @include respond-to($tablet) {
+      width: 230px;
+      padding: 0;
+      margin-left: 25px;
+    }
 
   }
 
   &__item-parameters {
     @include font-char(13px, 30px);
+    @include respond-to($tablet) {
+      @include font-char(15px, 30px);
+    }
 
   }
 
@@ -58,11 +97,17 @@
     border-top: 1px solid #ededed;
     width: 206px;
     margin: 0 auto;
+    @include respond-to($tablet) {
+      width: 267px;
+    }
 
   }
 
   &__price {
     @include font-char(15px, 24px, $bold);
+    @include respond-to($tablet) {
+      @include font-char(17px, 24px, $bold);
+    }
   }
 
 }

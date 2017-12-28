@@ -1282,18 +1282,31 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 177px;
+  min-height: 177px;
   background-color: #f1f1f1;
   margin-bottom: 30px; }
+  @media all and (min-width: 768px) {
+    .catalog__header {
+      min-height: 226px;
+      margin-bottom: 80px; } }
 
 .catalog__title {
   font-size: 27px;
   font-family: 'Open Sans', 'Arial', sans-serif;
   line-height: 30px;
   font-weight: 700; }
+  @media all and (min-width: 768px) {
+    .catalog__title {
+      font-size: 43px;
+      font-family: 'Open Sans', 'Arial', sans-serif;
+      line-height: 50px;
+      font-weight: 700; } }
 
 .catalog__content {
   padding: 0 30px; }
+  @media all and (min-width: 768px) {
+    .catalog__content {
+      padding: 0 50px; } }
 
 .catalog__item {
   display: -webkit-box;
@@ -1310,13 +1323,31 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: 30px; }
+  @media all and (min-width: 768px) {
+    .catalog__item {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      border: 1px solid #ededed;
+      min-height: 333px;
+      margin-bottom: 55px; } }
   .catalog__item:hover {
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
             box-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
 
-.catalog__photo {
-  width: 260px;
-  height: 195px; }
+@media all and (min-width: 768px) {
+  .catalog__photo {
+    height: auto; } }
+
+.catalog__picture {
+  display: block; }
 
 .catalog__item-title {
   font-size: 17px;
@@ -1324,21 +1355,57 @@ body {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 7px; }
+  @media all and (min-width: 768px) {
+    .catalog__item-title {
+      font-size: 20px;
+      font-family: 'Open Sans', 'Arial', sans-serif;
+      line-height: 24px;
+      font-weight: 700; } }
 
 .catalog__info {
   width: 258px;
   border: 1px solid #ededed; }
+  @media all and (min-width: 768px) {
+    .catalog__info {
+      width: 334px;
+      min-height: 305px;
+      border: none;
+      padding-top: 29px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
 
 .catalog__text-info {
   margin: 0 auto;
   padding: 29px 0 19px 0;
   width: 204px; }
+  @media all and (min-width: 768px) {
+    .catalog__text-info {
+      width: 230px;
+      padding: 0;
+      margin-left: 25px; } }
 
 .catalog__item-parameters {
   font-size: 13px;
   font-family: 'Open Sans', 'Arial', sans-serif;
   line-height: 30px;
   font-weight: 400; }
+  @media all and (min-width: 768px) {
+    .catalog__item-parameters {
+      font-size: 15px;
+      font-family: 'Open Sans', 'Arial', sans-serif;
+      line-height: 30px;
+      font-weight: 400; } }
 
 .catalog__order {
   display: -webkit-box;
@@ -1358,40 +1425,87 @@ body {
   border-top: 1px solid #ededed;
   width: 206px;
   margin: 0 auto; }
+  @media all and (min-width: 768px) {
+    .catalog__order {
+      width: 267px; } }
 
 .catalog__price {
   font-size: 15px;
   font-family: 'Open Sans', 'Arial', sans-serif;
   line-height: 24px;
   font-weight: 700; }
+  @media all and (min-width: 768px) {
+    .catalog__price {
+      font-size: 17px;
+      font-family: 'Open Sans', 'Arial', sans-serif;
+      line-height: 24px;
+      font-weight: 700; } }
 
 .promo {
   border: 1px solid #ededed;
   width: 260px;
   margin: 0 auto;
   margin-bottom: 58px; }
+  @media all and (min-width: 768px) {
+    .promo {
+      width: 668px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; } }
   .promo__header {
     padding: 22px 27px 26px 27px;
     position: relative; }
+    @media all and (min-width: 768px) {
+      .promo__header {
+        -webkit-box-ordinal-group: 3;
+            -ms-flex-order: 2;
+                order: 2; } }
+  .promo__video {
+    display: block;
+    margin-bottom: 17px; }
   .promo__title {
     font-size: 17px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 24px;
     font-weight: 700;
     padding-left: 63px; }
+    @media all and (min-width: 768px) {
+      .promo__title {
+        font-size: 20px;
+        font-family: 'Open Sans', 'Arial', sans-serif;
+        line-height: 24px;
+        font-weight: 700; } }
     .promo__title::before {
       content: url("../img/video-mobile.png");
       position: absolute;
       left: 40px;
       top: 31px; }
+      @media all and (min-width: 768px) {
+        .promo__title::before {
+          top: 20px; } }
   .promo__content {
     padding: 25px 27px 31px 33px; }
+    @media all and (min-width: 768px) {
+      .promo__content {
+        -webkit-box-ordinal-group: 4;
+            -ms-flex-order: 3;
+                order: 3; } }
   .promo__text {
     font-size: 13px;
     font-family: 'Open Sans', 'Arial', sans-serif;
     line-height: 24px;
     font-weight: 400;
     margin-bottom: 27px; }
+    @media all and (min-width: 768px) {
+      .promo__text {
+        font-size: 15px;
+        font-family: 'Open Sans', 'Arial', sans-serif;
+        line-height: 30px;
+        font-weight: 400; } }
   .promo__make-order-btn {
     text-transform: uppercase;
     font-size: 17px;
@@ -1406,3 +1520,7 @@ body {
     text-decoration: none;
     color: #444444;
     display: block; }
+    @media all and (min-width: 768px) {
+      .promo__make-order-btn {
+        width: 584px;
+        margin-bottom: 18px; } }
