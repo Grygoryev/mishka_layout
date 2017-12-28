@@ -1,0 +1,47 @@
+.promo {
+
+  border: 1px solid #ededed;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 58px;
+
+  &__header {
+    padding: 22px 27px 26px 27px;
+    position: relative;
+  }
+
+  &__title {
+    @include font-char(17px, 24px, $bold);
+    padding-left: 63px;
+
+    &::before {
+      content: url('../img/video-mobile.png');
+      position: absolute;
+      left: 40px;
+      top: 31px;
+    }
+  }
+
+  &__content {
+    padding: 25px 27px 31px 33px;
+  }
+
+  &__text {
+    @include font-char(13px, 24px);
+    margin-bottom: 27px;
+  }
+
+  &__make-order-btn {
+    text-transform: uppercase;
+    @include font-char(17px, 16px, $bold);
+    border: 2px solid #444444;
+    width: 190px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #444444;
+    display: block;
+  }
+
+}

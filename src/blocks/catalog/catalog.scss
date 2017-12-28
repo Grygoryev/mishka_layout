@@ -1,0 +1,68 @@
+.catalog {
+
+  &__header {
+    @include flex(center, center);
+    height: 177px;
+    background-color: #f1f1f1;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    @include font-char(27px, 30px, $bold);
+  }
+
+  &__content {
+    padding: 0 30px;
+  }
+
+  &__item {
+    @include flex(center, center, column);
+    margin-bottom: 30px;
+
+    &:hover {
+      box-shadow: 0 0 1px rgba(black, 0.3);
+    }
+  }
+
+  &__photo {
+    width: 260px;
+    height: 195px;
+  }
+
+  &__item-title {
+    @include font-char(17px, 24px, $bold);
+    margin-bottom: 7px;
+
+  }
+
+  &__info {
+    width: 258px;
+    border: 1px solid #ededed;
+  }
+
+  &__text-info {
+    margin: 0 auto;
+    padding: 29px 0 19px 0;
+    width: 204px;
+
+  }
+
+  &__item-parameters {
+    @include font-char(13px, 30px);
+
+  }
+
+  &__order {
+    @include flex(space-between, center);
+    min-height: 71px;
+    border-top: 1px solid #ededed;
+    width: 206px;
+    margin: 0 auto;
+
+  }
+
+  &__price {
+    @include font-char(15px, 24px, $bold);
+  }
+
+}

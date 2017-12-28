@@ -2,7 +2,7 @@ body, h1, h2, p {
   padding: 0;
   margin: 0; }
 
-h1, h2, p, span {
+h1, h2, p, span, picture {
   margin: 0;
   padding: 0; }
 
@@ -287,6 +287,8 @@ body {
 
 .mobile-menu {
   display: none;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 128, 0, 0.5);
+          box-shadow: 0 1px 3px rgba(0, 128, 0, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,6 +313,7 @@ body {
     height: 21px;
     width: 21px;
     position: absolute;
+    cursor: pointer;
     right: 29px;
     top: 29px; }
   .mobile-menu__item {
@@ -353,11 +356,8 @@ body {
     left: 30px;
     bottom: 28px; }
 
-.mobile-menu-show {
+.element-switch--off {
   display: none; }
-
-.items-btn--off {
-  display: block; }
 
 .intro {
   background: url("../img/hero-mobile.png") top center no-repeat;
@@ -1265,3 +1265,142 @@ body {
   width: 50px;
   height: 50px;
   margin-left: 28px; }
+
+.catalog__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 177px;
+  background-color: #f1f1f1;
+  margin-bottom: 30px; }
+
+.catalog__title {
+  font-size: 27px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 30px;
+  font-weight: 700; }
+
+.catalog__content {
+  padding: 0 30px; }
+
+.catalog__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px; }
+  .catalog__item:hover {
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0.3); }
+
+.catalog__photo {
+  width: 260px;
+  height: 195px; }
+
+.catalog__item-title {
+  font-size: 17px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 24px;
+  font-weight: 700;
+  margin-bottom: 7px; }
+
+.catalog__info {
+  width: 258px;
+  border: 1px solid #ededed; }
+
+.catalog__text-info {
+  margin: 0 auto;
+  padding: 29px 0 19px 0;
+  width: 204px; }
+
+.catalog__item-parameters {
+  font-size: 13px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 30px;
+  font-weight: 400; }
+
+.catalog__order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 71px;
+  border-top: 1px solid #ededed;
+  width: 206px;
+  margin: 0 auto; }
+
+.catalog__price {
+  font-size: 15px;
+  font-family: 'Open Sans', 'Arial', sans-serif;
+  line-height: 24px;
+  font-weight: 700; }
+
+.promo {
+  border: 1px solid #ededed;
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 58px; }
+  .promo__header {
+    padding: 22px 27px 26px 27px;
+    position: relative; }
+  .promo__title {
+    font-size: 17px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 24px;
+    font-weight: 700;
+    padding-left: 63px; }
+    .promo__title::before {
+      content: url("../img/video-mobile.png");
+      position: absolute;
+      left: 40px;
+      top: 31px; }
+  .promo__content {
+    padding: 25px 27px 31px 33px; }
+  .promo__text {
+    font-size: 13px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 27px; }
+  .promo__make-order-btn {
+    text-transform: uppercase;
+    font-size: 17px;
+    font-family: 'Open Sans', 'Arial', sans-serif;
+    line-height: 16px;
+    font-weight: 700;
+    border: 2px solid #444444;
+    width: 190px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+    text-decoration: none;
+    color: #444444;
+    display: block; }

@@ -216,6 +216,7 @@
 
 .mobile-menu {
   display: none;
+  box-shadow: 0 1px 3px rgba(green, 0.5);
   @include flex(center, center, column);
   @include respond-to($tablet) {
     display: none;
@@ -229,6 +230,7 @@
     height: 21px;
     width: 21px;
     position: absolute;
+    cursor: pointer;
     right: 29px;
     top: 29px;
   }
@@ -267,10 +269,6 @@
   }
 }
 
-.mobile-menu-show {
+.element-switch--off {
   display: none;
-}
-
-.items-btn--off {
-  display: block;
 }
