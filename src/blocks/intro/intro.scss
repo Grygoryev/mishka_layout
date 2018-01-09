@@ -35,7 +35,7 @@
       @include font-char(43px, 50px, $bold);
     }
     @include respond-to($desktop) {
-      @include font-char(53px, 57  px, $bold);
+      @include font-char(53px, 57px, $bold);
     }
   }
 }

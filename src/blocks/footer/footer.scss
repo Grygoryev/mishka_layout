@@ -21,6 +21,12 @@
     }
   }
 
+  &__content--catalog {
+    @include respond-to($desktop) {
+      padding: 0 50px;
+    }
+  }
+
   &__logo {
     display: none;
     @include respond-to($tablet) {

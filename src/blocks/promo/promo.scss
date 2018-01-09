@@ -4,50 +4,92 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 58px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
   @include respond-to($tablet) {
     width: 668px;
     @include flex(null, null, column);
-    // @include font-char(20px, 24px, $bold);
+  }
+
+  @include respond-to($desktop) {
+    width: 1050px;
+    height: 454px;
+    @include flex();
   }
 
   &__header {
-    padding: 22px 27px 26px 27px;
     position: relative;
+    order: 2;
     @include respond-to($tablet) {
-      order: 2;
+      order: 1;
+      margin-bottom: 39px;
+    }
+    @include respond-to($desktop) {
+
     }
   }
 
   &__video {
     display: block;
-    // order: 1;
-    margin-bottom: 17px;
+
   }
 
   &__title {
+    order: 1;
+    padding: 30px 0;
     @include font-char(17px, 24px, $bold);
-    padding-left: 63px;
+    padding-left: 73px;
     @include respond-to($tablet) {
-      // order: 2;
+      order: 2;
       @include font-char(20px, 24px, $bold);
+      padding: 0;
+      padding-left: 105px;
+      margin-bottom: 7px;
+    }
+    @include respond-to($desktop) {
+      display: none;
     }
 
     &::before {
       content: url('../img/video-mobile.png');
       position: absolute;
-      left: 40px;
-      top: 31px;
+      left: 26px;
+      top: 38px;
       @include respond-to($tablet) {
-        top: 20px;
+        top: 494px;
+        left: 42px;
       }
     }
   }
 
+  &__title-desktop {
+    @include font-char(20px, 24px, $bold);
+    // padding-left: 63px;
+    display: none;
+    @include respond-to($desktop) {
+      display: block;
+      margin-bottom: 34px;
+    }
+
+    &::before {
+      content: url('../img/video-mobile.png');
+      position: absolute;
+      top: 55px;
+    }
+  }
+
   &__content {
+    order: 3;
     padding: 25px 27px 31px 33px;
     @include respond-to($tablet) {
-      order: 3;
+
     }
+    @include respond-to($desktop) {
+      @include flex(flex-start, null, column);
+      padding: 94px 59px 50px 80px;
+    }
+
   }
 
   &__text {
@@ -55,6 +97,12 @@
     margin-bottom: 27px;
     @include respond-to($tablet) {
       @include font-char(15px, 30px);
+      padding-left: 7px;
+      margin-bottom: 35px;
+    }
+    @include respond-to($desktop) {
+      margin-bottom: 47px;
+      padding: 0;
     }
   }
 
@@ -70,8 +118,12 @@
     color: #444444;
     display: block;
     @include respond-to($tablet) {
-      width: 584px;
+      width: 582px;
+      padding: 16px 0;
       margin-bottom: 18px;
+    }
+    @include respond-to($desktop) {
+      width: 230px;
     }
   }
 }
