@@ -88,7 +88,7 @@ body {
         padding: 0 100px; } }
     @media all and (min-width: 1250px) {
       .header__bottom--catalog {
-        padding: 0; } }
+        padding: 0 50px; } }
   .header__menu-desktop {
     display: none; }
     @media all and (min-width: 1250px) {

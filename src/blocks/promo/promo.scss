@@ -32,7 +32,6 @@
 
   &__video {
     display: block;
-
   }
 
   &__title {
@@ -65,7 +64,6 @@
 
   &__title-desktop {
     @include font-char(20px, 24px, $bold);
-    // padding-left: 63px;
     display: none;
     @include respond-to($desktop) {
       display: block;

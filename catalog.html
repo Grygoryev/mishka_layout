@@ -8,9 +8,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
-<body>
-  <header class="header">
-		<div class="header__top">
+<body class="wsize--smalldesktop">
+  <header class="header wsize--smalldesktop">
+		<div class="header__top header__top--catalog">
 			<div class="links">
 				<a class="links__item links__catalog" href="catalog.html">Каталог товаров</a>
 				<a class="links__item links__orderknitting" href="#">Вязание на заказ</a>
@@ -28,7 +28,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="header__bottom">
+		<div class="header__bottom header__bottom--catalog">
 			<nav class="header__menu-tablet menu-extra">
 				<a class="menu-extra__item menu-extra__catalog" href="catalog.html">Каталог товаров</a>
 				<a class="menu-extra__item menu-extra__order-knitting" href="#">Вязание на заказ</a>
@@ -53,13 +53,14 @@
     </div>
 	</header>
 
-	<div class="catalog">
+	<div class="catalog wsize--smalldesktop">
 		<div class="catalog__header">
       <h1 class="catalog__title">Каталог товаров</h1>
 		</div>
     <div class="catalog__content">
       <div class="catalog__item">
         <picture class="catalog__photo">
+          <source class="catalog__picture" srcset="img/photo-1-desktop.png" media="(min-width: 1250px)">
           <source class="catalog__picture" srcset="img/photo-1-tablet.png" media="(min-width: 768px)">
   			  <img class="catalog__picture" srcset="img/photo-1-mobile.png" alt="default-product-photo">
   			</picture>
@@ -76,6 +77,7 @@
   		</div>
   		<div class="catalog__item">
         <picture class="catalog__photo">
+          <source class="catalog__picture" srcset="img/photo-2-desktop.png" media="(min-width: 1250px)">
           <source class="catalog__picture" srcset="img/photo-2-tablet.png" media="(min-width: 768px)">
   			  <img class="catalog__picture" srcset="img/photo-2-mobile.png" alt="default-product-photo">
   			</picture>
@@ -92,6 +94,7 @@
   		</div>
   		<div class="catalog__item">
         <picture class="catalog__photo">
+          <source class="catalog__picture" srcset="img/photo-3-desktop.png" media="(min-width: 1250px)">
           <source class="catalog__picture" srcset="img/photo-3-tablet.png" media="(min-width: 768px)">
           <img class="catalog__picture" srcset="img/photo-3-mobile.png" alt="default-product-photo">
         </picture>
@@ -109,22 +112,23 @@
     </div>
 	</div>
 
-	<div class="promo">
+	<div class="promo wsize--smalldesktop">
 		<div class="promo__header">
-			<h2 class="promo__title">Процесс производства</h2>
+      <picture>
+        <source class="promo__video" srcset="img/video-desktop.png" media="(min-width: 1250px)">
+        <source class="promo__video" srcset="img/video-tablet.png" media="(min-width: 768px)">
+        <img class="promo__video" src="img/play-mobile.png" alt="video">
+      </picture>
 		</div>
-		<!-- <iframe class="promo__video" src="" frameborder="0"></iframe> -->
-    <picture>
-      <source class="promo__video" srcset="img/video-tablet.png" media="(min-width: 768px)">
-      <img class="promo__video" src="img/play-mobile.png" alt="video">
-    </picture>
-  	<div class="promo__content">
+		<h2 class="promo__title">Процесс производства</h2>
+    <div class="promo__content">
+      <h2 class="promo__title-desktop">Процесс производства</h2>
       <p class="promo__text">По просьбе наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
   		<a class="promo__make-order-btn" href="#">Сделать заказ</a>
     </div>
 	</div>
 
-  <footer class="footer">
+  <footer class="footer wsize--smalldesktop">
     <div class="footer__content">
   		<a class="footer__logo" href="#"></a>
   		<div class="social">
