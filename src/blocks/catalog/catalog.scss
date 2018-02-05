@@ -8,7 +8,13 @@
     @include respond-to($tablet) {
       min-height: 226px;
       margin-bottom: 80px;
+      &::after {
+        content: "";
+        background: url('../img/zigzag-fill-desktop5.png');
+        bottom: 0;
+      }
     }
+
     @include respond-to($desktop) {
       min-height: 255px;
       margin-bottom: 128px;
@@ -18,7 +24,7 @@
         background: url('../img/zigzag-fill-desktop5.png');
         height: 34px;
         width: 100%;
-        max-width: 1248px;
+        max-width: 1148px;
         position: absolute;
         bottom: -18px;
       }
